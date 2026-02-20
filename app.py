@@ -11,9 +11,6 @@ app_ui = ui.page_sidebar(
         ui.input_file("file", "Upload CSV or Excel", accept=[".csv", ".xlsx"]),
         ui.output_ui("sheet_selector"),
         ui.output_ui("column_selectors")  # dynamic dropdowns
-        #ui.input_select("xcol", "X-axis", choices=cols, selected="Morale"),
-        #ui.input_select("ycol", "Y-axis", choices=cols, selected="Stress"),
-        #ui.input_select("zcol", "Z-axis", choices=cols, selected=cols[0]),
     ),
     ui.card(
         ui.card_header("Auto Plot"),
@@ -61,7 +58,7 @@ def server(input, output, session):
     @reactive.calc
     def df():
         file = input.file()
-        if file is None:
+        if file is None: # need this if check given that first column selected is None
             return None
 
         path = file[0]["datapath"]
