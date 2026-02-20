@@ -1,0 +1,12 @@
+{
+    "https://api.shinyapps.io": {
+        "server_url": "https://api.shinyapps.io",
+        "filename": "C:\\Users\\gswan\\OneDrive - aptima\\git_repos\\data_viewer_app",
+        "app_url": "https://garrettswan.shinyapps.io/data_viewer_app/",
+        "app_id": "16725270",
+        "app_guid": null,
+        "title": "data_viewer_app",
+        "app_mode": "python-shiny",
+        "app_store_version": 1
+    }
+}
