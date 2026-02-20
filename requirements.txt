@@ -1,0 +1,9 @@
+shiny
+pandas
+matplotlib
+seaborn
+numpy
+openpyxl          # needed for reading/writing .xlsx
+# xlrd            # needed only if you read .xls (legacy Excel)
+# pyxlsb          # needed only if you read .xlsb
+# xlsxwriter      # optional engine for writing .xlsx (often faster/feat
